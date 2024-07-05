@@ -1,0 +1,107 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial
+}
+
+*  {
+    box-sizing: border-box;
+}
+
+.bg-image {
+    height: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img1 { background-image: url(background1.jpg)}
+
+.img2 {
+    position: absolute;
+    top: 217px;
+    left: 5.4%;
+    opacity: 70%;
+}
+
+.bg-text {
+    color: rgba(255, 255, 255, 0.644);
+    font-weight: bold;
+    font-size: 80px;
+    position: absolute;
+    top: 317px;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 500px;
+    padding: 20px;
+    text-align: center;
+}
+
+.avatars-container {
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.avatar-block {
+    text-align: center;
+    margin: 10px;
+}
+
+.avatar {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #CCC;
+    padding: 5px;
+}
+
+.name {
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.caption {
+    margin-top: 5px;
+    font-size: 19px;
+    color: #555;
+}
+
+.location {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.location-name {
+    font-size: 70px;
+    text-align: center;
+}
+
+.location-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mappa-img {
+    max-width: 90%;
+    border-radius: 15%
+}
+
+.footer {
+    position:fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 150px;
+   background-color: #e1e3e1;
+   color: black;
+   text-align: center;
+}
