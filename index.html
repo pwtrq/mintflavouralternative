@@ -2,58 +2,151 @@
 <html>
 <head>
     <link rel ="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js" integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
     <body>
-        <div class="bg-image img1">
-            <img src="logo.png" class="fg-image img2">
-        </div>
-        <div class="bg-text">mintflavour</div>
-        <h1 style="font-size:70px; text-align:center">Il Team</h1>
-        <div class="avatars-container">
-            <div class="avatar-block">
-                <img src="Tommaso.png" class="avatar" style="border-radius:50%">
-                <h1 class="name">Tommaso</h1>
-                <p class="caption">Ceo, Founder, Software Engineer</p>
-            </div>
-            <div class="avatar-block">
-                <img src="Laura.png" class="avatar" style="border-radius:50%">
-                <h1 class="name">Laura</h1>
-                <p class="caption">Full Stack Developer, Project Manager</p>
-            </div>
-            <div class="avatar-block">
-                <img src="Damiano.png" class="avatar" style="border-radius:50%">
-                <h1 class="name">Damiano</h1>
-                <p class="caption">CTO & App Developer, R&D Director</p>
-            </div>
-            <div class="avatar-block">
-                <img src="Davide.png" class="avatar" style="border-radius:50%">
-                <h1 class="name">Davide</h1>
-                <p class="caption">Backend Engineer & App Developer</p>
-            </div>
-            <div class="avatar-block">
-                <img src="Elisa.png" class="avatar" style="border-radius:50%">
-                <h1 class="name">Elisa</h1>
-                <p class="caption">Creative Director & Visual Designer</p>
-            </div>
-        </div>
-        <div class="location">
-            <h1 class="location-name">Dove Trovarci</h1>
-            <div class="location-content">                    
-                <a href="https://maps.app.goo.gl/KbZRu9dbvhNVNSXJ9">
-                    <img id="mappa" src="mappa.png" class="mappa-img">
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="#mintflavour">
+                    Cos'è Mintflavour
+                </a>
+                <a href="#team">
+                    Il team
+                </a>
+                <a href="#progetti">
+                    Progetti
+                </a>
+                <a href="#social">
+                    Social
                 </a>
             </div>
         </div>
-        <div class="footer">
-            <p>Mintflavour sas di Codella Tommaso & C. - C.F e P.IVA IT04898580230</p>
-            <p><a href="mailto:hello@mintflavour.com">hello@mintflavour.com</a> - 0454157824 - Via Leone Pancaldo, 70</p>
-            <a href="https://www.facebook.com/mintflavourweb">
-                <img src="facebook-icon.png" style="width:42px;height:42px;" > 
-            <a href = "https://www.linkedin.com/company/mintflavour/"> 
-                <img src="linkedin-icon.png" style="width:42px;height:42px;"> </a> 
-            <a href="https://www.instagram.com/mintflavourweb/">
-                <img src="instagram-icon.png" style="width:42px;height:42px;">
+        <div class="bg-image img1">
+            <div class="dropdown">
+                <button class="button"><span class="open" onclick="openNav()">&#9776;</span></button>
+                
+                <div class="logo-container">
+                    <div class="logo">
+                        <img src="logo.png" class="logo">
+                    </div>
+                    <div class="logo-text">
+                        <h2 class="logo-name">
+                            Mintflavour <br/>
+                        </h2>
+                        <h6 class="logo-slogan">
+                            minting fresh ideas, one pixel at a time
+                        </h6>
+                    </div>
+                </div>
+            </div>
         </div>
-    </body>
+        <h1 id="mintflavour" class="titles">
+            Cos'è Mintflavour
+        </h1>
+        <p id="chisiamo">
+            Mintflavour è una creative, digital & development agency con sede a Verona;<br />
+            Mintflavour si occupa di siti web, app e graphic design. <br />
+            Mintflavour aiuta le aziende a sviluppare al meglio strumenti digitali avanzati. <br />
+            Mintflavour è al vostro fianco nella creazione di siti e applicazioni web,<br />
+            e applicazioni mobili native per Android e iOS. <br />
+            Mintflavour può realizzare soluzioni software su misura <br />
+            che si adattano perfettamente alle vostre esigenze.
+        </p>
+        <h1 id="team" class="titles">
+            Il Team
+        </h1>
+        <div class="avatars-container">
+            <div class="avatar-block">
+                <a href="https://www.linkedin.com/in/tommasocodella/">
+                    <img src="Tommaso.png" class="avatar" style="border-radius:50%">
+                </a>
+                <h1 class="name">
+                    Tommaso
+                </h1>
+                <p class="caption">
+                    Ceo, Founder, Software Engineer
+                </p>
+            </div>
+            <div class="avatar-block">
+                <img src="Laura.png" class="avatar" style="border-radius:50%">
+                <h1 class="name">
+                    Laura
+                </h1>
+                <p class="caption">
+                    Full Stack Developer, Project Manager
+                </p>
+            </div>
+            <div class="avatar-block">
+                <img src="Damiano.png" class="avatar" style="border-radius:50%">
+                <h1 class="name">
+                    Damiano
+                </h1>
+                <p class="caption">
+                    CTO & App Developer, R&D Director
+                </p>
+            </div>
+            <div class="avatar-block">
+                <img src="Davide.png" class="avatar" style="border-radius:50%">
+                <h1 class="name">
+                    Davide
+                </h1>
+                <p class="caption">
+                    Backend Engineer & App Developer
+                </p>
+            </div>
+            <div class="avatar-block">
+                <img src="Elisa.png" class="avatar" style="border-radius:50%">
+                <h1 class="name">
+                    Elisa
+                </h1>
+                <p class="caption">
+                    Creative Director & Visual Designer
+                </p>
+            </div>
+        </div>
+        <h1 id="progetti" class="titles">
+            Progetti
+        </h1>
+        <div class="progetti">
+            <p><a href="https://isliday.com/" class="isliday"><img src="isliday.png" class="isliday"></a></p>
+            <p><a href="https://www.ana.it/app-smartphone/" class="alpinapp"><img src="alpinapp.png" class="alpinapp"></a></p>
+        </div>
+        <script src="script.js"></script>
+        </body>
+        <footer class = "footer">
+        <div class = "location">
+            <h1>
+                Dove Trovarci
+            </h1>
+            <p>
+                Mintflavour sas di Codella Tommaso & C. - C.F e P.IVA IT04898580230 <br />
+            <a href="mailto:hello@mintflavour.com">
+                hello@mintflavour.com
+            </a> 
+                - 0454157824 - Via Leone Pancaldo, 70
+            </p>
+            <h1 id="social">
+                Social
+            </h1>
+        </div>
+        <div class = "icons">
+                <a href="https://www.facebook.com/mintflavourweb"> 
+                    <img class="icons" src="facebook-logo.svg"> 
+                </a> 
+                <a href="https://www.linkedin.com/company/mintflavour/"> 
+                    <img class="icons" src="linkedin.svg"> 
+                </a> 
+                <a href="https://www.instagram.com/mintflavourweb/"> 
+                    <img class="icons" src="instagram-seeklogo.svg"> 
+                </a>
+        </div>
+        <div class="location-content">                    
+            <a href="https://maps.app.goo.gl/KbZRu9dbvhNVNSXJ9"> 
+                <img id="mappa" src="mappa.png" class="mappa-img">
+            </a>
+        </div>
+    </footer>
 </html>
